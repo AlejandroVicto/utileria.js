@@ -1,7 +1,7 @@
 # Utilería JS
 **Nombre:** Alejandro Jimenez Victoria
 **Numero de control:** 23160968
-**Utilería JS** es una librería ligera de JavaScript nativo (Vanilla JS) diseñada para simplificar y unificar las validaciones más comunes en formularios web. 
+**Utilería JS** es una librería ligera de JavaScript nativo diseñada para simplificar y unificar las validaciones más comunes en formularios web. 
 
 ---
 
@@ -114,7 +114,7 @@ const correoInvalido = validarCorreoInstitucional("juan@gmail.com");     // fals
 
 ---
 
-## 🎥 Video Demostrativo
+## Video Demostrativo
 
 
 [Ver Video Demostrativo](https://youtu.be/f-RmoIFFko8)
