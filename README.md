@@ -1,11 +1,15 @@
-# 🛠️ Utilería JS
-
+# Utilería JS
+**Nombre:** Alejandro Jimenez Victoria
+**Numero de control:** 23160968
 **Utilería JS** es una librería ligera de JavaScript nativo (Vanilla JS) diseñada para simplificar y unificar las validaciones más comunes en formularios web. 
 
 ---
 
+## Problema que resuelve
 
-## 🚀 Instalación
+En el desarrollo de cualquier aplicación web es necesario validar los datos que ingresa el usuario en los formularios para evitar errores en el sistema, muchas veces se escribe en cada bloque el codigo requerido, por lo mismo se creo esta libreria en donde encapsula todo el codigo requerido para validar los datos de un formulario y unicamente se hace llamado a la libreria para obtener el resultado de la validacion.
+
+## Instalación
 
 Para usar **Utilería JS** en tu proyecto, simplemente enlaza el archivo `utileria.js` en tu documento HTML:
 
@@ -13,15 +17,24 @@ Para usar **Utilería JS** en tu proyecto, simplemente enlaza el archivo `utiler
 <script src="js/utileria.js"></script>
 ```
 
+## Estructura del Proyecto
+
+```text
+/utileria-js
+├── README.md
+├── index.html
+├── login.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── utileria.js
+└── img/
+    
+```
+
 ---
 
-## 💻 Uso y Documentación de Funciones
-
-La librería se divide en las validaciones obligatorias y funciones libres implementadas.
-
-### Parte Obligatoria
-
-Estas son las 6 funciones base requeridas para la validación general:
+## Uso y Documentación de Funciones
 
 #### 1. `validarCorreo(correo) → boolean`
 Valida si una cadena de texto tiene el formato correcto de email.
@@ -81,7 +94,27 @@ const correoInvalido = validarCorreoInstitucional("juan@gmail.com");     // fals
 
 ---
 
-## Capturas de Pantalla (Consola)
+## Capturas de Pantalla
 
+### Consola
 ![Prueba de funciones en Consola](img/consola.png)
 *Figura 1: Resultados de las funciones de la librería en consola.*
+
+### Index
+![Vista de la página principal](img/index.png)
+*Figura 2: Vista de la página principal (Index).*
+
+### Login
+![Vista del Login](img/login.png)
+*Figura 3: Vista de la página de Login.*
+
+### Modal
+![Vista del Modal de error/éxito](img/modal.png)
+*Figura 4: Vista del Modal utilizado para alertas.*
+
+---
+
+## 🎥 Video Demostrativo
+
+
+[Ver Video Demostrativo](https://youtu.be/f-RmoIFFko8)
