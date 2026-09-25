@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Utilería JS</title>
+    <script src="js/utileria.js" defer></script>
+    <script src="js/registro.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="contenedor-principal">
+        <div class="encabezado">
+            <h1>Crea tu cuenta</h1>
+            <p>Ingresa tus datos personales para continuar</p>
+        </div>
+
+        <form id="registroForm" novalidate>
+            <div class="grupo-input" id="grupo-nombre">
+                <label for="nombre" class="etiqueta">Nombre completo</label>
+                <input type="text" id="nombre" class="campo-texto" placeholder="Ej. Alejandro Victoria">
+                <span class="mensaje-error">Solo se permiten letras y espacios.</span>
+            </div>
+
+            <div class="grupo-input" id="grupo-control">
+                <label for="numeroControl" class="etiqueta">Número de control</label>
+                <input type="text" id="numeroControl" class="campo-texto" placeholder="Ej. 23160968">
+                <span class="mensaje-error">Debe tener 8 dígitos y ser de 7mo semestre en adelante (Inicia con 23 o
+                    menor).</span>
+            </div>
+
+            <div class="grupo-input" id="grupo-telefono">
+                <label for="telefono" class="etiqueta">Teléfono</label>
+                <input type="number" id="telefono" class="campo-texto" placeholder="Máximo 10 dígitos">
+                <span class="mensaje-error">El teléfono debe tener máximo 10 dígitos.</span>
+            </div>
+
+            <div class="grupo-input" id="grupo-fecha">
+                <label for="fechaNacimiento" class="etiqueta">Fecha de nacimiento</label>
+                <input type="date" id="fechaNacimiento" class="campo-texto">
+                <span class="mensaje-error">Por favor ingresa una fecha válida.</span>
+            </div>
+
+            <div class="grupo-input" id="grupo-correo">
+                <label for="correo" class="etiqueta">Correo Institucional</label>
+                <input type="email" id="correo" class="campo-texto" placeholder="ejemplo@itoaxaca.edu.mx">
+                <span class="mensaje-error">Debe ser un correo con terminación @itoaxaca.edu.mx.</span>
+            </div>
+
+            <div class="grupo-input" id="grupo-password">
+                <label for="password" class="etiqueta">Contraseña</label>
+                <input type="password" id="password" class="campo-texto" placeholder="Mínimo 8 caracteres">
+                <span class="mensaje-error">Debe tener 8 o mas caracteres, mayúscula, minúscula, número y
+                    especial.</span>
+            </div>
+
+            <button type="submit" class="boton" id="btnRegistrar">Registrar</button>
+        </form>
+
+        <div class="enlaces">
+            <p><a href="login.html">Inicia sesión</a></p>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modalResult">
+        <div class="modal-content">
+            <div class="modal-icon" id="modalIcon"></div>
+            <h2 id="modalTitle">Resultado</h2>
+            <p id="modalMessage">Mensaje...</p>
+            <button class="boton" id="btnCerrarModal">Aceptar</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

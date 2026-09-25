@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Utilería JS</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/utileria.js" defer></script>
+    <script src="js/login.js" defer></script>
+</head>
+
+<body>
+    <div class="contenedor-principal">
+        <div class="encabezado">
+            <h1>Bienvenido de nuevo</h1>
+            <p>Ingresa tus credenciales para acceder</p>
+        </div>
+
+        <form id="loginForm" novalidate>
+            <div class="grupo-input" id="grupo-correo">
+                <label for="correo" class="etiqueta">Correo electrónico</label>
+                <input type="email" id="correo" class="campo-texto" placeholder="ejemplo@correo.com">
+                <span class="mensaje-error">Ingresa un formato de correo válido.</span>
+            </div>
+
+            <div class="grupo-input" id="grupo-password">
+                <label for="password" class="etiqueta">Contraseña</label>
+                <input type="password" id="password" class="campo-texto" placeholder="Mínimo 8 caracteres">
+                <span class="mensaje-error">Debe tener 8+ caracteres, mayúscula, minúscula, número y carácter
+                    especial.</span>
+            </div>
+
+            <button type="submit" class="boton" id="btnIniciarSesion">Iniciar Sesión</button>
+        </form>
+
+        <div class="enlaces">
+            <p><a href="index.html">Regístrate aquí</a></p>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modalResult">
+        <div class="modal-content">
+            <div class="modal-icon" id="modalIcon"></div>
+            <h2 id="modalTitle">Resultado</h2>
+            <p id="modalMessage">Mensaje...</p>
+            <button class="boton" id="btnCerrarModal">Aceptar</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
